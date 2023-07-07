@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<h1>AMAZON SALE</h1>
+<body>
+  <div class="container">
+    <div class="product-card" onclick="showModal('Cycle', '10000')">
+        <!-- <img class="product-image" src="product1.jpg"> -->
+        <a target="_blank" href="product1.jpg">
+        <img class="product-image" src="product1.jpg">
+      </a>
+      <h3>Cycle</h3>
+      <p class="product-cost">&#8377;10000</p>
+      <button class="buy-button" onclick="addToCart('Cycle')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('IPhone13Pro', '100000')">
+       <a target="_blank" href="product2.jpg">
+        <img class="product-image" src="product2.jpg">      </a>
+      <h3>IPhone13Pro</h3>
+      <p class="product-cost">&#8377;100000</p>
+      <button class="buy-button" onclick="addToCart('IPhone13Pro')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Book', '100')">
+        <a target="_blank" href="product3.jpg">
+        <img class="product-image" src="product3.jpg">
+          </a>      <h3>Book</h3>
+      <p class="product-cost">&#8377;100</p>
+      <button class="buy-button" onclick="addToCart('Book')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Watch', '20000')">
+        <a target="_blank" href="product4.jpg">
+        <img class="product-image" src="product4.jpg">
+          </a>      <h3>Watch</h3>
+      <p class="product-cost">&#8377;20000</p>
+      <button class="buy-button" onclick="addToCart('Watch')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Laptop', '50000')">
+        <a target="_blank" href="product5.jpg">
+        <img class="product-image" src="product5.jpg">
+          </a>      <h3>Laptop</h3>
+      <p class="product-cost">&#8377;50000</p>
+      <button class="buy-button" onclick="addToCart('Laptop')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Bottle', '50')">
+        <a target="_blank" href="product6.jpg">
+        <img class="product-image" src="product6.jpg">
+          </a>      <h3>Bottle</h3>
+      <p class="product-cost">&#8377;50</p>
+      <button class="buy-button" onclick="addToCart('Bottle')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Shirt', '2000')">
+        <a target="_blank" href="product7.jpg">
+        <img class="product-image" src="product7.jpg">
+          </a>      <h3>Shirt</h3>
+      <p class="product-cost">&#8377;2000</p>
+      <button class="buy-button" onclick="addToCart('Shirt')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Pant', '1500')">
+        <a target="_blank" href="product8.jpg">
+        <img class="product-image" src="product8.jpg">
+          </a>      <h3>Pant</h3>
+      <p class="product-cost">&#8377;1500</p>
+      <button class="buy-button" onclick="addToCart('Pant')">Buy</button>
+    </div>
+    <div class="product-card" onclick="showModal('Jacket', '3000')">
+        <a target="_blank" href="product9.jpg">
+        <img class="product-image" src="product9.jpg"></a>     
+         <h3>Jacket</h3>
+      <p class="product-cost">&#8377;3000</p>
+      <button class="buy-button" onclick="addToCart('Jacket')">Buy</button>
+    </div>
+  </div>
+
+  <div id="cart" class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
